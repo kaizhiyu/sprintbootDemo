@@ -6,10 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String hello() {
         System.out.println("print hello....");
         return "Welcome to SpringBoot!!!";
+    }
+
+    @RequestMapping("/byte")
+    public String bytebyte() {
+        System.out.println("print byte....");
+        return "byte to SpringBoot!!!";
     }
 
 }
