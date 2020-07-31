@@ -18,4 +18,10 @@ public class HelloController {
         return "byte to SpringBoot!!!";
     }
 
+    @RequestMapping("/dida")
+    public String dida() {
+        System.out.println("print dida....");
+        return "dida to SpringBoot!!!";
+    }
+
 }
