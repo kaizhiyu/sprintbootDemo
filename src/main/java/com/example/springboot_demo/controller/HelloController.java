@@ -1,5 +1,6 @@
 package com.example.springboot_demo.controller;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,14 +19,41 @@ public class HelloController {
         return "byte to SpringBoot!!!";
     }
 
-    @RequestMapping("/dida")
-    public String dida() {
+    @RequestMapping("/dida/{str}")
+    public String dida(@PathVariable String str) {
         System.out.println("print dida....");
-        if (true) {
+        if ("1".equals(str)) {
             System.out.println("true");
         } else {
             System.out.println("false");
         }
+
+        switch (str) {
+            case "1":
+                System.out.println("1");
+                break;
+            case "2":
+                System.out.println("1");
+                break;
+            case "3":
+                System.out.println("1");
+                break;
+            case "4":
+                System.out.println("1");
+                break;
+            case "5":
+                System.out.println("1");
+                break;
+            case "6":
+                System.out.println("1");
+                break;
+            case "7":
+                System.out.println("1");
+                break;
+            default:
+                break;
+        }
+
         return "dida to SpringBoot!!!";
     }
 
