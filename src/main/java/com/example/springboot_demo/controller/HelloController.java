@@ -21,6 +21,11 @@ public class HelloController {
     @RequestMapping("/dida")
     public String dida() {
         System.out.println("print dida....");
+        if (true) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
         return "dida to SpringBoot!!!";
     }
 
